@@ -1,0 +1,176 @@
+/* 
+  EDEEC9
+  DDE7C7
+  BFD8BD
+  98C9A3
+  77BFA3
+  Rifle Green 45503B
+  Dark Purple 3D2B3D
+  Middle Blue Green 9DD9D2
+  Floral White FFF8F0
+  Granite Gray 635D5C
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Rubik:wght@300;400&display=swap');
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+header {
+  background-color: #77BFA3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #FFF8F0;
+}
+
+header svg {
+  padding-right: 10px;
+}
+
+main,
+.router,
+#root {
+  height: 100%;
+  background-color: #FFF8F0;
+}
+
+.homepage {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.homepage .left {
+  font-size: 26px;
+  font-weight: 200;
+  padding: 0px 20px;
+  opacity: 0.7;
+}
+
+.homepage .left p {
+  margin-top: 15px;
+}
+
+.homepage .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.loginBox {
+  background-color: #ffffff;
+  border-color: #98C9A3;
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 40px 40px 40px;
+  margin-bottom: 10px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input::placeholder {
+  overflow: visible;
+}
+
+.username {
+  background-color: #FFF8F0;
+  border-color: #98C9A3;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  padding: 10px 122px 10px 10px;
+  font-size: 13px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.password {
+  background-color: #FFF8F0;
+  border-color: #98C9A3;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  padding: 10px 122px 10px 10px;
+  font-size: 13px;
+  text-align: left;
+  margin-bottom: 16px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.loginButton {
+  background-color: #77BFA3;
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+  padding: 8px 128px;
+  margin-bottom: 10px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.loginFail {
+  font-size: 12px;
+  font-style: italic;
+  color: lightcoral;
+}
+
+.forgotPW {
+  color: #45503B;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.signupBox {
+  background-color: #ffffff;
+  border-color: #98C9A3;
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 84px 8px 84px;
+  font-size: 14px;
+}
+
+.signupBox a {
+  color: #45503B;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0px;
+  font-size: 12px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: #DDE7C7;
+  color: #635D5C;
+}

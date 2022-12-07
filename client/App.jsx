@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <div className="router">
-        <main>
+        <main className="routerMain">
           <Routes>
             <Route path="/" element={<Homepage />} />
           </Routes>
