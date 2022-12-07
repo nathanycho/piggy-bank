@@ -35,15 +35,15 @@ class Homepage extends Component {
         <section className="right">
           <div className="loginBox">
             <form className="loginForm" method="POST" action='/login'>
-              <input className="username" id="username" placeholder="Username"></input>
-              <input className="password" id="password" type="password" placeholder="Password"></input>
-              <button className="loginButton" id="loginButton">Log in</button>
+              <input className="username" id="username" name="username" type="text" placeholder="Username"></input>
+              <input className="password" id="password" name="password" type="password" placeholder="Password"></input>
+              <input className="loginButton" id="loginButton" type="submit" value="Log in"></input>
               <div className="loginFail" id="loginFail"></div>
               <a className="forgotPW" href="#forgot">Forgot password?</a>
             </form>
           </div>
           <div className="signupBox">
-            <p>Don't have an account? <a href="#signup">Sign up</a></p>
+            <p>Don't have an account? <a href="signup">Sign up</a></p>
           </div>
         </section>
       </main>

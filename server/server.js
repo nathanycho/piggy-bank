@@ -6,6 +6,16 @@ const mongoose = require('mongoose');
 const PORT = 3000;
 const app = express();
 
+const MONGO_URI = 'mongodb+srv://nathanycho:M5hrLefIhedrww0F@budget-app.mpwexuk.mongodb.net/?retryWrites=true&w=majority';
+
+mongoose.connect(MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  dbName: 'piggy'
+})
+  .then(() => console.log('Connected to Mongo DB.'))
+  .catch(err => console.log(err));
+
 // ===================================================
 // Routers
 // ===================================================
@@ -14,8 +24,7 @@ const app = express();
 // ===================================================
 // Controllers
 // ===================================================
-// const userController = require('./controllers/userController');
-
+const userController = require('./controllers/userController');
 
 // ===================================================
 // Request Body Parsing
@@ -32,7 +41,15 @@ app.use(express.static(path.resolve(__dirname, '../client')));
 // ===================================================
 // Route Handlers
 // ===================================================
-// app.use('/api', apiRouter);
+// app.use('/', apiRouter);
+
+app.post('/signup/success', userController.createUser, (req, res) => {
+  return res.redirect('/');
+})
+
+app.post('/login', userController.verifyUser, (req, res) => {
+  return res.redirect('/dashboard');
+})
 
 // ===================================================
 // Catch-All 404 Handling

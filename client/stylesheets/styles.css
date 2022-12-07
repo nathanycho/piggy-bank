@@ -13,6 +13,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Rubik:wght@300;400&display=swap');
 
+/* universal reset of margins and padding */
+
 html,
 body {
   height: 100%;
@@ -20,6 +22,8 @@ body {
   padding: 0;
   font-family: 'Rubik', sans-serif;
 }
+
+/* absolute header and footer for all pages */
 
 header {
   background-color: #77BFA3;
@@ -40,12 +44,35 @@ header svg {
   padding-right: 10px;
 }
 
+header a {
+  text-decoration: none;
+  color: #FFF8F0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0px;
+  font-size: 12px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: #DDE7C7;
+  color: #635D5C;
+}
+
+/* allows all pages to span entire browser height */
+
 main,
 .router,
 #root {
   height: 100%;
   background-color: #FFF8F0;
 }
+
+/* homepage */
 
 .homepage {
   display: flex;
@@ -69,8 +96,6 @@ main,
   flex-direction: column;
   align-items: center;
 }
-
-
 
 .loginBox {
   background-color: #ffffff;
@@ -161,16 +186,40 @@ input::placeholder {
   font-weight: 600;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+/* signup page */
+
+.signupPage {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 0px;
-  font-size: 12px;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  background-color: #DDE7C7;
-  color: #635D5C;
 }
+
+.signupPage .signupBox {
+  background-color: #ffffff;
+  border-color: #98C9A3;
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 40px 40px 40px;
+  margin-bottom: 10px;
+}
+
+.signupButton {
+  background-color: #77BFA3;
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+  padding: 8px 128px;
+  margin-bottom: 10px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* dashboard */

@@ -26,14 +26,8 @@ module.exports = {
     headers: { 'Access-Control-Allow-Origin': '*' },
     
     proxy: {
-      '/api/**': {
-        target: 'http://localhost:3000/',
-        secure: false,
-      },
-      '/assets/**': {
-        target: 'http://localhost:3000/',
-        secure: false,
-      },
+      '/signup/success': 'http://localhost:3000/',
+      '/login': 'http://localhost:3000/',
     },
   },
   module: {
