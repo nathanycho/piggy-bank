@@ -257,14 +257,49 @@ input::placeholder {
 
 /* dashboard */
 
-.dashboard .right {
+.dashboardMain {
   padding: 71px 0 42px 140px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* inputPage */
+.summariesBox {
+  padding: 10px 10px;
+  margin: 20px 20px;
+  height: 40vw;
+  width: 50vw;
+  background-color: white;
+  border-color: #98C9A3;
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoTitle {
+  font-weight: 900;
+  font-size: 28px;
+  padding: 10px 0;
+}
+
+.info {
+  font-size: 22px;
+  font-weight: 200;
+  padding: 10px 0;
+}
+
+hr {
+  height: 2px;
+  width: 75%;
+  border-width: 0;
+  color: #77BFA3;
+  background-color: #77BFA3;
+}
+
+/* transactions Page */
 
 .transactionsPage .right {
   padding: 71px 0 42px 140px;

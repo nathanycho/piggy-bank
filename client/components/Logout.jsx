@@ -6,6 +6,10 @@ class Logout extends Component {
     super(props);
   }
 
+  componentDidMount() {
+
+  }
+
   render() {
     return (
       <main className="logoutPage">
