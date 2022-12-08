@@ -33,7 +33,7 @@ userController.createUser = (req, res, next) => {
         },
       });
     }
-    // res.locals.user = user;
+    res.locals.user = user;
     return next();
   });
 };
@@ -60,7 +60,7 @@ userController.verifyUser = (req, res, next) => {
             return res.redirect('/'); // add functionality of "invalid login; password"
           }
           else {
-            // res.locals.user = data;
+            res.locals.user = data;
             return next();
           }
         })

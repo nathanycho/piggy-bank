@@ -23,11 +23,12 @@ module.exports = {
       publicPath: '/',
     },
 
-    headers: { 'Access-Control-Allow-Origin': '*' },
+    // headers: { 'Access-Control-Allow-Origin': '*' },
     
     proxy: {
       '/signup/success': 'http://localhost:3000/',
       '/login': 'http://localhost:3000/',
+      '/transactions/input': 'http://localhost:3000/',
     },
   },
   module: {

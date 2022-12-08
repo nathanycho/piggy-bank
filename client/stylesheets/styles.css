@@ -38,6 +38,7 @@ header {
   font-weight: 700;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   color: #FFF8F0;
+  z-index: 1;
 }
 
 header svg {
@@ -222,4 +223,124 @@ input::placeholder {
   align-items: center;
 }
 
+/* navbar */
+
+.navbar {
+  position: fixed;
+  left: 0;
+  min-width: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-right: 1px solid #98C9A3;
+  padding-top: 100px;
+}
+
+.sidebarLink {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #77BFA3;
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+  font-weight: 200;
+}
+
+.navbar svg {
+  padding-right: 10px;
+}
+
+#logoutLink {
+  padding-top: 470px;
+}
+
 /* dashboard */
+
+.dashboard .right {
+  padding: 71px 0 42px 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* inputPage */
+
+.transactionsPage .right {
+  padding: 71px 0 42px 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.transactionsBox {
+  padding: 10px 10px;
+  margin: 20px 0;
+  height: 70vw;
+  width: 70vw;
+  max-height: 550px;
+  max-width: 1300px;
+  background-color: white;
+  border-color: #98C9A3;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.transactInput {
+  background-color: white;
+  border-color: #98C9A3;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  font-size: 13px;
+  text-align: left;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.inputButton {
+  background-color: #77BFA3;
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.transaction {
+  max-height: 25px;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 2.8fr 4fr 1fr 2.2fr 1.5fr 5fr 2fr;
+}
+
+/* transaction */
+
+.transactionInfo {
+  padding: 0 5px;
+  border-right: 1px solid #98C9A3;
+}
+
+.transactionButtons {
+  display: flex;
+}
+
+.transactionButtons button {
+  margin: 0 5px;
+  background-color: #77BFA3;
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* logout */
+
+.logoutPage {
+  padding: 71px 0 42px 0x;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
