@@ -1,4 +1,4 @@
-# Solo Project
+# Piggy Bank
 
 ## Summary
 
